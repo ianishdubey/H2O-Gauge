@@ -1,0 +1,378 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana;
+}
+
+body {
+    background-color: #00ffca21;
+}
+.info{
+    font-size: 2rem;
+}
+.secondSec blockquote{
+    font-size: medium;
+}
+
+.nav {
+    background: #0A4D68;
+    color: #FFF;
+    display: flex
+}
+
+.nav .logo {
+    font-size: 24px;
+    padding: 20px;
+    margin-left: 25px
+    
+}
+
+.nav .logo a {
+    color: #FFF;
+    text-decoration: none
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin: 0 8rem 0 auto;
+}
+
+.nav-links {
+    position: relative;
+    color: #eee;
+    letter-spacing: 2px;
+    text-decoration: none;
+    padding: 12px;
+    margin: 0 18px;
+}
+
+.nav-links::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    transition: width 0.2s ease-out;
+    background-color: #05BFDB;
+}
+
+.nav-links:hover::before {
+    width: 100%;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+section h1 {
+    margin-top: 5rem;
+    font-size: 5.5rem;
+    font-weight: 600;
+    color: #00054f;
+}
+
+section p {
+    margin-top: 4rem;
+    font-size: 2rem;
+    width: 53%;
+    color: #0A4D68;
+}
+
+.firstSec {
+    background: url(../o6nRjS1.png);
+    background-size: cover;
+}
+
+.secondSec {
+    background: url(../fFD9lD9.jpeg);
+    background-size: cover;
+}
+
+.secondSec p {
+    margin-top: 0;
+}
+
+.questions-btn {
+    margin-top: 7rem;
+    padding: 1.5rem 2.5rem;
+    border-radius: 10px;
+    border: 0;
+    background-color: #0A4D68;
+    letter-spacing: 0.13rem;
+    font-size: 1.2rem;
+    transition: all .3s ease;
+    box-shadow: #00054f 0px 10px 0px 0px;
+}
+
+.questions-btn:hover {
+    box-shadow: #00054f 0px 7px 0px 0px;
+}
+
+.questions-btn:active {
+    background-color: #0A4D68;
+    box-shadow: #00054f 0px 0px 0px 0px;
+    transform: translateY(5px);
+    transition: 0.2s;
+}
+
+.questions-btn a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.mousescroll {
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.mouse {
+    width: 2.4rem;
+    height: 4rem;
+    border: 2px solid black;
+    border-radius: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.mouse::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    border-radius: 50%;
+    opacity: 1;
+    animation: wheel 1.3s infinite;
+}
+
+@keyframes wheel {
+    to {
+        opacity: 0;
+        top: 3rem;
+    }
+}
+
+hr {
+    background-color: #00FFCA;
+    height: 1px;
+    border: none;
+    box-shadow: 0 4px 9px #05BFDB;
+}
+
+blockquote {
+    font-weight: 100;
+    font-size: 2rem;
+    max-width: 20em;
+    line-height: 1.4;
+    position: relative;
+    margin-top: 5rem;
+    padding: .5rem;
+}
+
+blockquote:before,
+blockquote:after {
+    position: absolute;
+    color: #0A4D68;
+    font-size: 8rem;
+    width: 4rem;
+    height: 4rem;
+}
+
+blockquote:before {
+    content: '“';
+    left: -5rem;
+    top: -2rem;
+}
+
+blockquote:after {
+    content: '”';
+    right: -5rem;
+    bottom: 1rem;
+}
+
+.person {
+    line-height: 3;
+    font-style: oblique;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.info {
+    width: 80%;
+    border: 2px solid #0A4D68;
+    padding: 2rem;
+    border-radius: 30px;
+}
+
+footer {
+    background-color: #00446f;
+    color: whitesmoke;
+    height: 15rem;
+}
+
+footer h2 {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+footer p {
+    width: 50%;
+    text-align: left;
+    color: #859ec6;
+
+}
+
+#links {
+    position: absolute;
+    right: 30%;
+    margin-top: 2rem;
+}
+
+.about {
+    position: absolute;
+    left: 14rem;
+    margin-top: 2rem;
+}
+
+.quicklinks {
+    list-style-type: none;
+}
+
+.quicklinks a {
+    position: relative;
+    color: #eee;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.quicklinks li {
+    margin: 0.5rem 0 0 5rem;
+
+}
+
+.quicklinks a:hover {
+    color: #859ec6;
+}
+
+
+
+/* Media query for mobile responsiveness */
+@media only screen and (max-width: 480px) {
+    /* Adjustments for smaller screens */
+    
+    .secondSec{
+        font-size: small;
+    }
+    .info{
+        font-size: small;
+    }
+
+    /* body{
+      font-size: 16px;
+    } */
+    
+    .nav-list {
+      margin: 0 1rem 0 auto;
+    }
+  
+    .logo {
+      font-size: large; /* Decrease logo size for smaller screens */
+    }
+  
+    section .firstSec{
+      padding: 1rem;
+      font-size: medium;
+    }
+  
+    section h1 {
+      
+      margin-top: 2rem;
+    }
+  
+    section p {
+      width: 100%;
+      padding: 1rem;
+      margin-top: 1rem;
+      font-size: mdeium; 
+    }
+
+    
+
+  
+    .questions-btn {
+      margin-top: 2rem;
+      padding: 1rem 2rem;
+      /* font-size: 1rem; Decrease button font size for smaller screens */
+    }
+  
+    .mousescroll {
+      bottom: 5%; 
+      font-size: small;
+    }
+  
+    .mouse {
+      width: 1.6rem; /* Decrease mouse size for smaller screens */
+      height: 2.6rem; /* Decrease mouse size for smaller screens */
+      border-width: 1px; /* Decrease mouse border width for smaller screens */
+      font-size: small;
+    }
+  
+    hr {
+      margin-top: 2rem; /* Increase margin top of hr for smaller screens */
+    }
+  
+    footer {
+      display: flex;
+      flex-direction: column;
+      align-items: auto;
+    height: 50rem;
+    }
+  
+    /* Adjust the quick links to be positioned at the end */
+    footer #links {
+      margin:  5rem 2rem 0rem; /* Push the quick links to the bottom */
+      order: 2; /* Change the order to 2 so it appears at the bottom */
+      
+    }
+  
+    footer p {
+      /* font-size: 0.9rem; Remove or comment out font size adjustment */
+      max-width: 100%;
+    }
+  
+    /* Adjust the about section to have some space at the top */
+    footer .about {
+      margin-top: 2rem;
+      text-align: right; /* Add margin-top for space */
+    }
+    footer .p{
+        
+        margin: 0 0 0 8rem;
+    }
+   
+  
+    /* Adjust quick links styling */
+    footer .quicklinks {
+      margin-top: auto; /* Add margin-top for spacing */
+    }
+
+    /* Adjust quick links list items */
+    footer .quicklinks li {
+      margin: 0.5rem 0 0 5rem; /* Adjust margin for spacing between links */
+    }
+  }
+  

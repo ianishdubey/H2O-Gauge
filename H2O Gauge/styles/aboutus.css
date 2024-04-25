@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana;
+}
+
+body {
+    background-color: #00ffca21;
+}
+
+.nav {
+    background: #0A4D68;
+    color: #FFF;
+    display: flex
+}
+
+.nav .logo {
+    font-size: 24px;
+    padding: 20px;
+    margin-left: 25px
+}
+
+.nav .logo a {
+    color: #FFF;
+    text-decoration: none
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin: 0 8rem 0 auto;
+}
+
+.nav-links {
+    position: relative;
+    color: #eee;
+    letter-spacing: 2px;
+    text-decoration: none;
+    padding: 12px;
+    margin: 0 18px;
+}
+
+.nav-links::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    transition: width 0.2s ease-out;
+    background-color: #05BFDB;
+}
+
+.nav-links:hover::before {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #00054f;
+    margin-top: 50px;
+}
+
+section p {
+    text-align: justify;
+    padding: 7rem;
+    margin: 5rem;
+    margin-top: 0;
+}
+
+section {
+    height: 60vh;
+    width: 100%;
+}
+
+footer {
+    background-color: #00446f;
+    color: whitesmoke;
+    height: 15rem;
+}
+
+footer h2 {
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+footer p {
+    width: 39%;
+    text-align: justify;
+    color: #859ec6;
+
+}
+
+#links {
+    position: absolute;
+    right: 30%;
+    margin-top: 2rem;
+}
+
+.about {
+    position: absolute;
+    left: 14rem;
+    margin-top: 2rem;
+}
+
+.quicklinks {
+    list-style-type: none;
+}
+
+.quicklinks a {
+    position: relative;
+    color: #eee;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.quicklinks li {
+    margin: 0.5rem 0 0 1rem;
+
+}
+
+.quicklinks a:hover {
+    color: #859ec6;
+}
+
+
+/* Add this CSS code to your aboutus.css file */
+
+/* Default styles */
+
+/* Your existing CSS code goes here... */
+
+/* Media queries for responsiveness */
+/* Add this CSS code to your aboutus.css file */
+
+/* Default styles */
+
+/* Your existing CSS code goes here... */
+
+/* Media query for mobile responsiveness */
+
+@media only screen and (max-width: 480px) {
+    /* Adjustments for smaller screens */
+  
+    
+
+    .nav-list {
+      margin: 0 1rem 0 auto;
+    }
+  
+    .logo {
+      font-size: 15px; /* Decrease logo size for smaller screens */
+    }
+  
+    section {
+      padding: 1rem;
+    }
+  
+    section h1 {
+      font-size: 2.5rem;
+      margin-top: 2rem;
+    }
+  
+    section p {
+      width: 100%;
+      padding: 0rem;
+      margin-top: 1rem;
+      font-size: small;
+      max-width: 70%; /* Decrease paragraph font size for smaller screens */
+    }
+  
+    footer {
+      padding: 1rem;
+      height: 30rem
+    }
+  
+    footer h2 {
+      font-size: 1.3rem; /* Decrease footer heading font size for smaller screens */
+    }
+  
+    footer p {
+      width: 100%;
+      padding: 1rem;
+      font-size: 0.9rem; /* Decrease footer paragraph font size for smaller screens */
+    }
+  
+    #links {
+      position: static;
+      margin-top: 1rem;
+    }
+  
+    .about {
+      position: static;
+      margin-top: 1rem;
+    }
+  
+    .quicklinks li {
+      margin: 0.5rem 0;
+    }
+  }
+  
